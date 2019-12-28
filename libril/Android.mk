@@ -54,5 +54,6 @@ LOCAL_MODULE:= libril
 LOCAL_SANITIZE := integer
 
 include $(BUILD_SHARED_LIBRARY)
+include $(CLEAR_VARS)
 
 endif # BOARD_PROVIDES_LIBRIL
