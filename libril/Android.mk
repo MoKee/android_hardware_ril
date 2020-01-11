@@ -6,6 +6,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_VENDOR_MODULE := true
+LOCAL_SDCLANG := false
 
 LOCAL_SRC_FILES:= \
     ril.cpp \
@@ -53,5 +54,6 @@ LOCAL_MODULE:= libril
 LOCAL_SANITIZE := integer
 
 include $(BUILD_SHARED_LIBRARY)
+include $(CLEAR_VARS)
 
 endif # BOARD_PROVIDES_LIBRIL
